@@ -4,25 +4,25 @@ var extendend =false;
 
 $(document).ready(function(){
     $("#ONE").click(function(){
-        $("#main").load("one.html");
+        $("#main").load("http://mrztone.github.io/one.html");
     });
 });
 
 $(document).ready(function(){
     $("#TWO").click(function(){
-        $("#main").load("two.html");
+        $("#main").load("http://mrztone.github.io/two.html");
     });
 });
 
 $(document).ready(function(){
     $("#THREE").click(function(){
-        $("#main").load("three.html");
+        $("#main").load("http://mrztone.github.io/three.html");
     });
 });
 
 $(document).ready(function(){
     $("#FOUR").click(function(){
-        $("#main").load("four.html");
+        $("#main").load("http://mrztone.github.io/four.html");
     });
 });
 
