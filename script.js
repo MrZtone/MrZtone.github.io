@@ -4,25 +4,25 @@ var extendend =false;
 
 $(document).ready(function(){
     $("#ONE").click(function(){
-        $("#main").load("one.php");
+        $("#main").load("one.html");
     });
 });
 
 $(document).ready(function(){
     $("#TWO").click(function(){
-        $("#main").load("two.php");
+        $("#main").load("two.html");
     });
 });
 
 $(document).ready(function(){
     $("#THREE").click(function(){
-        $("#main").load("three.php");
+        $("#main").load("three.html");
     });
 });
 
 $(document).ready(function(){
     $("#FOUR").click(function(){
-        $("#main").load("four.php");
+        $("#main").load("four.html");
     });
 });
 
