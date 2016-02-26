@@ -2,6 +2,7 @@ var extendend =false;
 
 // ***************BUTTONS******************
 
+// http://mrztone.github.io/
 $(document).ready(function(){
     $("#ONE").click(function(){
         $("#main").load("http://mrztone.github.io/one.html");

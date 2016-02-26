@@ -1,0 +1,62 @@
+@font-face {
+    font-family:Roboto Light;
+    src:url(Roboto-Light.ttf);
+
+}
+
+@font-face {
+	font-family: Roboto Thin;
+	src: url(Roboto-Thin.ttf);
+}
+
+@font-face {
+	font-family: Roboto Medium;
+	src: url(Roboto-Medium.ttf);
+}
+
+#profilepic
+{
+	height: 11.89437vw;
+	width: 10vw;
+	border-style: solid;
+	border-width: 0.3vw;
+	border-color: #34495e;
+
+}
+
+#imageplacer
+{
+		padding-top: 2vh;
+		padding-left: 2vw;
+		padding-bottom: 2vh;
+		width: 58vw;
+		
+}
+
+#textbody
+{
+		width: 16vw;
+		
+		padding-left: 2vw;
+		padding-right: 4vw;
+		padding-top: 2vh;
+		
+		position: absolute;
+		margin-top: 0vh;
+		font-family: "Roboto Light";
+}
+
+#textplacer
+{
+	width: 36vw;
+	
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vh;
+	position: absolute;
+	margin-left: 20vw;
+	margin-top: 0vh;
+	
+	
+	font-family: "Roboto Light";
+}
