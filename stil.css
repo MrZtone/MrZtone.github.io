@@ -1,6 +1,7 @@
 body
 {
 	background-color:#efdfe4;
+
 	height: 1200px;
 }
 
@@ -28,6 +29,11 @@ body
 	margin-left: -1vw;
 	margin-top: -8px;
 	background-color: #330033;
+    background: url('oldtimey.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	z-index: 1;
 	
 }
