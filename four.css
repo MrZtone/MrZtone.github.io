@@ -18,6 +18,7 @@
 {
 	height: 11.89437vw;
 	width: 10vw;
+	position: absolute;
 
 }
 
@@ -25,9 +26,13 @@
 {
 		padding-top: 2vh;
 		padding-left: 2vw;
-		padding-bottom: 2vh;
+		padding-bottom: 13vw;
 		width: 58vw;
 		background-color: white;
+		position: absolute;
+		margin-left: 0vw;
+		margin-top: 0vh;
+		margin-bottom: 0vh;  
 		
 }
 
@@ -40,7 +45,7 @@
 		padding-top: 2vh;
 		
 		position: absolute;
-		margin-top: 5vh;
+		margin-top: 15vw;
 		font-family: "Roboto Light";
 		background-color: white;
 }
@@ -54,9 +59,57 @@
 	padding-top: 2vh;
 	position: absolute;
 	margin-left: 20vw;
-	margin-top: 5vh;
+	margin-top: 15vw;
 	background-color: white;
 	
 	
+	font-family: "Roboto Light";
+}
+
+#SMButtons
+{
+	float: right;
+	width: 26vw;
+	height: 2vw;
+	position: absolute;
+	margin-left: 11vw;
+	margin-top: 9vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	
+}
+
+.smButton
+{
+	float: left;
+	height: 2vw;
+	width: 8vw;
+	margin-right: 0.5vw;
+	background-color: #3b5998;
+}
+
+#FBButton
+{
+	background-color: #3b5998;
+}
+
+#TButton
+{
+	background-color: #55acee;
+}
+
+#LiButton
+{
+	background-color: #0077b5;
+}
+
+#header
+{
+	position: absolute;
+	margin-left: 11.5vw;
+	margin-top: 1vh;
+	padding-left: 1vw;
 	font-family: "Roboto Light";
 }
