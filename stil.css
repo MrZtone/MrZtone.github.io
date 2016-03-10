@@ -1,6 +1,6 @@
 body
 {
-	background-color:#ecf0f1;
+	background-color:#ffeff4;
 	height: 1200px;
 }
 
@@ -27,7 +27,7 @@ body
 	position: fixed;
 	margin-left: -1vw;
 	margin-top: -8px;
-	background-color: #344983;
+	background-color: #e67e22;
 	
 }
 
@@ -74,6 +74,6 @@ body
 	margin-top: 10vh;
 	margin-left: 20vw;
 	margin-right: 20vw;
-	background-color: white;
+	
 	z-index: -1;
 }
