@@ -6,24 +6,28 @@ var extendend =false;
 $(document).ready(function(){
     $("#ONE").click(function(){
         $("#main").load("http://mrztone.github.io/one.html");
+        window.history.forward();
     });
 });
 
 $(document).ready(function(){
     $("#TWO").click(function(){
         $("#main").load("http://mrztone.github.io/two.html");
+        window.history.forward();
     });
 });
 
 $(document).ready(function(){
     $("#THREE").click(function(){
         $("#main").load("http://mrztone.github.io/three.html");
+        window.history.forward();
     });
 });
 
 $(document).ready(function(){
     $("#FOUR").click(function(){
         $("#main").load("http://mrztone.github.io/four.html");
+        window.history.forward();
     });
 });
 
