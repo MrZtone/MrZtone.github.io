@@ -6,30 +6,36 @@ var extendend =false;
 $(document).ready(function(){
     $("#ONE").click(function(){
         $("#main").load("http://mrztone.github.io/one.html");
-        window.history.forward();
+        var stateObj = { page: 1 };
+		window.history.pushState(stateObj, "page 2", "one.html");
     });
 });
 
 $(document).ready(function(){
     $("#TWO").click(function(){
         $("#main").load("http://mrztone.github.io/two.html");
-        window.history.forward();
+        var stateObj = { page: 2 };
+		window.history.pushState(stateObj, "page 2", "two.html");
     });
 });
 
 $(document).ready(function(){
     $("#THREE").click(function(){
         $("#main").load("http://mrztone.github.io/three.html");
-        window.history.forward();
+        var stateObj = { page: 3 };
+		window.history.pushState(stateObj, "page 2", "three.html");
     });
 });
 
 $(document).ready(function(){
     $("#FOUR").click(function(){
         $("#main").load("http://mrztone.github.io/four.html");
-        window.history.forward();
+        var stateObj = { page: 4 };
+		window.history.pushState(stateObj, "page 2", "four.html");
     });
 });
+
+//window.onpopstate = function(event) { history.back();};
 
 //*****************************************
 
