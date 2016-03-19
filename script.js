@@ -4,11 +4,9 @@ var extendend =false;
 
 // http://mrztone.github.io/
 $(document).ready(function(){
-    $("#ONE").click(function(){
-        $("#main").load("http://mrztone.github.io/one.html");
-        var stateObj = { page: 1 };
-		window.history.pushState(stateObj, "page 2", "one.html");
-    });
+document.getElementById("ONE").addEventListener('click', function(e){
+	$("#main").load("http://mrztone.github.io/one.html");
+},false);
 });
 
 $(document).ready(function(){
@@ -23,7 +21,7 @@ $(document).ready(function(){
     $("#THREE").click(function(){
         $("#main").load("http://mrztone.github.io/three.html");
         var stateObj = { page: 3 };
-		window.history.pushState(stateObj, "page 2", "three.html");
+		window.history.pushState(stateObj, "page 3", "three.html");
     });
 });
 
@@ -31,7 +29,7 @@ $(document).ready(function(){
     $("#FOUR").click(function(){
         $("#main").load("http://mrztone.github.io/four.html");
         var stateObj = { page: 4 };
-		window.history.pushState(stateObj, "page 2", "four.html");
+		window.history.pushState(stateObj, "page 4", "four.html");
     });
 });
 
