@@ -31,7 +31,7 @@
 		background-color: white;
 		position: absolute;
 		margin-left: 0vw;
-		margin-top: 0vh;
+		margin-top: 1vw;
 		margin-bottom: 0vh;  
 		
 }
@@ -46,7 +46,7 @@
 		padding-bottom: 2vh;
 		
 		position: absolute;
-		margin-top: 15vw;
+		margin-top: 16vw;
 		margin-right: 4vw;
 		font-family: "Roboto Light";
 		font-size: 1vw;
@@ -63,7 +63,7 @@
 	padding-bottom: 2vh;
 	position: absolute;
 	margin-left: 20vw;
-	margin-top: 15vw;
+	margin-top: 16vw;
 	background-color: white;
 	
 	

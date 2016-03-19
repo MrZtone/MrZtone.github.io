@@ -3,6 +3,7 @@ var extendend =false;
 // ***************BUTTONS******************
 
 // http://mrztone.github.io/
+
 $(document).ready(function(){
 document.getElementById("ONE").addEventListener('click', function(e){
 	$("#main").load("http://mrztone.github.io/one.html");
@@ -60,7 +61,7 @@ function showPage()
 		{
 			var height= 100-i;
 			var heightstring= height+"vh";
-			var margn=93-i;
+			var margn=91-i;
 			var margnstring=margn+"vh";
 
 			bckgrnd.style.height = heightstring;
@@ -74,8 +75,8 @@ function showPage()
 				innerinterval = setInterval(function()
 				{
 					height= 100-i;
-					heightstring= height+"vh";
-					margn=93-i;
+					heightstring= height+"%";
+					margn=91-i;
 					margnstring=margn+"vh";
 
 					bckgrnd.style.height = heightstring;

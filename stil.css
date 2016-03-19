@@ -1,7 +1,7 @@
 body
 {
-	background-color:#efdfe4;
-
+	background-color: #ecf0f1;
+	margin: 0;
 	height: 1200px;
 }
 
@@ -23,11 +23,10 @@ body
 
 #start
 {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	position: fixed;
-	margin-left: -1vw;
-	margin-top: -8px;
+
 	background-color: #330033;
     background: url('oldtimey.jpg') no-repeat center center fixed;
     -moz-background-size: cover;
@@ -41,9 +40,11 @@ body
 #allbuttons
 {
 	width: 72vw;
-	height: 7vh;
+	height: 2vw;
 	position: absolute;
-	margin-top: 40vh;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	margin-top: 23vw;
 	margin-right: 14vw;
 	margin-left: 14vw;
 }
@@ -61,7 +62,7 @@ body
 	cursor: pointer;
 	background-color: #ecf0f1;
 
-	font-size: 4vh;
+	font-size: 2vw;
 }
 
 .butn p
