@@ -22,10 +22,9 @@
 	padding-left: 2vw;
 	padding-right: 2vw;
 	padding-bottom: 1vw;
-	position: absolute;
-	margin-top: 0;
-	margin-left: 0;
+	margin-bottom: 1vw;
 	background-color: white;
+	clear: both;
 		
 }
 
@@ -69,7 +68,6 @@ h1
 	width: 16vw;
 	padding: 1vw;
 	position: absolute;
-	margin-top: 15vw;
 	margin-right: 4vw;
 	font-family: "Roboto Light";
 	font-size: 1vw;
@@ -85,7 +83,6 @@ h1
 	padding-bottom: 1vw;
 	position: absolute;
 	margin-left: 20vw;
-	margin-top: 15vw;
 	font-family: "Roboto Light";
 	font-size: 1vw;
 	background-color: white;

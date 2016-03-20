@@ -1,6 +1,6 @@
 var extendend =false;
 var adresses = ["http://mrztone.github.io/one.html", "http://mrztone.github.io/two.html", "http://mrztone.github.io/three.html", "http://mrztone.github.io/four.html"];
-//var adresses = ["one.html", "two.html", "three.html","four.html"]
+//var adresses = ["one.html", "two.html", "three.html","four.html"];
 
 // ***************BUTTONS******************
 /*
@@ -108,7 +108,6 @@ function showPage()
 				clearInterval(innerinterval);
 				clearInterval(interval);
 			}
-
 			++i;
 		} ,10);
 	}
