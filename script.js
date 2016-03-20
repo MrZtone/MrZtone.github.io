@@ -1,5 +1,4 @@
 var extendend =false;
-var stack = [];
 var adresses = ["http://mrztone.github.io/one.html", "http://mrztone.github.io/two.html", "http://mrztone.github.io/three.html", "http://mrztone.github.io/four.html"];
 //var adresses = ["one.html", "two.html", "three.html","four.html"]
 
@@ -115,37 +114,37 @@ function showPage()
 	}
 }
 
-	function change(obj,col1, col2) 
-	{
-		obj.style.background=col1;
-		obj.style.color=col2;
-	}
+function change(obj,col1, col2) 
+{
+	obj.style.background=col1;
+	obj.style.color=col2;
+}
 
-	function moveBar(bar)
+function moveBar(bar)
+{
+	var i=0;
+	interval = setInterval(function() 
 	{
-		var i=0;
-		interval = setInterval(function() 
+		bar.style.marginLeft= 14+i+"vw";
+		if(i==14)
 		{
-			bar.style.marginLeft= 14+i+"vw";
-			if(i==14)
-			{
-				clearInterval(interval);
-			}
-			++i;
-		} , 20);	
-	}
+			clearInterval(interval);
+		}
+		++i;
+	} , 20);	
+}
 
-	function showMain(obj)
+function showMain(obj)
+{
+	var i=1;
+	obj.style.visibility="visible";
+	var interval= setInterval(function()
 	{
-		var i=1;
-		obj.style.visibility="visible";
-		var interval= setInterval(function()
+		obj.style.opacity=0.01*i+"";
+		if(i==100)
 		{
-			obj.style.opacity=0.01*i+"";
-			if(i==100)
-			{
-				clearInterval(interval);
-			}
-			++i;
-		}, 10);
-	}
+			clearInterval(interval);
+		}
+		++i;
+	}, 10);
+}
