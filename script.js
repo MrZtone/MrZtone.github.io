@@ -63,7 +63,7 @@ function showPage()
 {
 	if (!extendend)
 	{
-
+		extendend=true;
 		var bckgrnd=document.getElementsByTagName('header')[0];
 		var bar=document.getElementsByTagName('nav')[0];
 		var i=1;
@@ -92,7 +92,6 @@ function showPage()
 					bar.style.marginTop =margnstring;
 					if(i==90)
 					{
-						extendend=true;
 						showMain(document.getElementsByTagName('main')[0]);
 
 						$("main").load(adresses[Number(window.location.hash[1])-1]);
@@ -105,7 +104,6 @@ function showPage()
 			}
 			if(i==90)
 			{
-				extendend=true;
 				showMain(document.getElementsByTagName('main')[0]);
 				
 				clearInterval(innerinterval);
