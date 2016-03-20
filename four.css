@@ -24,46 +24,38 @@
 
 #imageplacer
 {
-		padding-top: 2vh;
-		padding-left: 2vw;
-		padding-bottom: 13vw;
-		width: 58vw;
-		background-color: white;
-		position: absolute;
-		margin-left: 0vw;
-		margin-top: 1vw;
-		margin-bottom: 0vh;  
+	height: 12vw;
+	padding-top: 1vw;
+	padding-left: 2vw;
+	padding-bottom: 1vw;
+	width: 58vw;
+	background-color: white;
+	position: absolute;
 		
 }
 
 #textbody
 {
-		width: 16vw;
-		
-		padding-left: 1vw;
-		padding-right: 1vw;
-		padding-top: 2vh;
-		padding-bottom: 2vh;
-		
-		position: absolute;
-		margin-top: 16vw;
-		margin-right: 4vw;
-		font-family: "Roboto Light";
-		font-size: 1vw;
-		background-color: white;
+	width: 16vw;
+	padding: 1vw;
+	position: absolute;
+	margin-top: 15vw;
+	margin-right: 4vw;
+	font-family: "Roboto Light";
+	font-size: 1vw;
+	background-color: white;
 }
 
 #textplacer
 {
 	width: 36vw;
-	
 	padding-left: 2vw;
 	padding-right: 2vw;
-	padding-top: 2vh;
-	padding-bottom: 2vh;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
 	position: absolute;
 	margin-left: 20vw;
-	margin-top: 16vw;
+	margin-top: 15vw;
 	background-color: white;
 	
 	
@@ -110,11 +102,12 @@
 	background-color: #0077b5;
 }
 
-#header
+h1
 {
 	position: absolute;
 	margin-left: 11.5vw;
-	margin-top: 1vh;
+	margin-top: 0.5vw;
 	padding-left: 1vw;
 	font-family: "Roboto Light";
+	font-size: 2.5vw;
 }

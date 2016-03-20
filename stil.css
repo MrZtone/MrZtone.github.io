@@ -53,9 +53,9 @@ body
 {
 	color: #2c3e50;
 	width: 16vw;
-	height: 5vh;
+	height: 3vw;
+	line-height: 3vw;
 	
-	margin-top: -0.01vh;
 	margin-left: 1vw;
 	margin-right: 1vw;
 	float:  right;
@@ -63,23 +63,21 @@ body
 	background-color: #ecf0f1;
 
 	font-size: 2vw;
-}
-
-.butn p
-{
 	text-align: center;
-	margin-top: 0vh;
+	
 	font-family: "Roboto Light";
 }
+
+
 
 #main
 {
 	width: 60vw;
-	height: 90vh;
+	
 	position: absolute;
 	visibility: hidden;
 	opacity: 0;
-	margin-top: 10vh;
+	margin-top: 6vw;
 	margin-left: 20vw;
 	margin-right: 20vw;
 	

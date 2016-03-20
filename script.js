@@ -6,7 +6,7 @@ var extendend =false;
 
 $(document).ready(function(){
 document.getElementById("ONE").addEventListener('click', function(e){
-	$("#main").load("http://mrztone.github.io/one.html");
+	//$("#main").load("http://mrztone.github.io/one.html");
 },false);
 });
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
     $("#TWO").click(function(){
         $("#main").load("http://mrztone.github.io/two.html");
         var stateObj = { page: 2 };
-		window.history.pushState(stateObj, "page 2", "two.html");
+		//window.history.pushState(stateObj, "page 2", "two.html");
     });
 });
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
     $("#THREE").click(function(){
         $("#main").load("http://mrztone.github.io/three.html");
         var stateObj = { page: 3 };
-		window.history.pushState(stateObj, "page 3", "three.html");
+		//window.history.pushState(stateObj, "page 3", "three.html");
     });
 });
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
     $("#FOUR").click(function(){
         $("#main").load("http://mrztone.github.io/four.html");
         var stateObj = { page: 4 };
-		window.history.pushState(stateObj, "page 4", "four.html");
+		//window.history.pushState(stateObj, "page 4", "four.html");
     });
 });
 
@@ -59,10 +59,10 @@ function showPage()
 
 		var interval = setInterval(function() 
 		{
-			var height= 100-i;
-			var heightstring= height+"vh";
-			var margn=91-i;
-			var margnstring=margn+"vh";
+			var height= 95-i;
+			var heightstring= height+"vw";
+			var margn=23-(i-50)*(22/40);
+			var margnstring=margn+"vw";
 
 			bckgrnd.style.height = heightstring;
 			if(i>50)
@@ -74,10 +74,10 @@ function showPage()
 			{
 				innerinterval = setInterval(function()
 				{
-					height= 100-i;
-					heightstring= height+"%";
-					margn=91-i;
-					margnstring=margn+"vh";
+					height= 95-i;
+					heightstring= height+"vw";
+					margn=23-(i-50)*(22/40);
+					margnstring=margn+"vw";
 
 					bckgrnd.style.height = heightstring;
 					if(i>50)
