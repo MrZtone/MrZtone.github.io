@@ -1,57 +1,71 @@
 var extendend =false;
+var stack = [];
+var adresses = ["http://mrztone.github.io/one.html", "http://mrztone.github.io/two.html", "http://mrztone.github.io/three.html", "http://mrztone.github.io/four.html"];
+//var adresses = ["one.html", "two.html", "three.html","four.html"]
 
 // ***************BUTTONS******************
-
-// http://mrztone.github.io/
-
+/*
 $(document).ready(function(){
 document.getElementById("ONE").addEventListener('click', function(e){
-	//$("#main").load("http://mrztone.github.io/one.html");
+	$("main").load(adresses[0]);
 },false);
 });
 
 $(document).ready(function(){
     $("#TWO").click(function(){
-        $("#main").load("http://mrztone.github.io/two.html");
-        var stateObj = { page: 2 };
-		//window.history.pushState(stateObj, "page 2", "two.html");
+        $("main").load(adresses[1]);
     });
 });
 
 $(document).ready(function(){
     $("#THREE").click(function(){
-        $("#main").load("http://mrztone.github.io/three.html");
-        var stateObj = { page: 3 };
-		//window.history.pushState(stateObj, "page 3", "three.html");
+     	$("main").load(adresses[2]);
     });
 });
 
 $(document).ready(function(){
     $("#FOUR").click(function(){
-        $("#main").load("http://mrztone.github.io/four.html");
-        var stateObj = { page: 4 };
-		//window.history.pushState(stateObj, "page 4", "four.html");
+     	$("main").load(adresses[3]);
     });
 });
+*/
 
-//window.onpopstate = function(event) { history.back();};
 
 //*****************************************
+
+function changeHistory()
+{
+	var index = Number(window.location.hash[1]);
+	console.log(index);
+
+	if(extendend)
+	{
+		if(index)
+		{
+			$("main").load(adresses[index-1]);
+		}
+		else
+		{
+			location.reload();
+		}
+	}
+	else
+	{
+		if(index)
+		{
+			showPage();
+		}
+	}
+}
+
 
 function showPage()
 {
 	if (!extendend)
 	{
 
-		var bckgrnd=document.getElementById("start");
-		var bar;
-		for(var i=0;i<bckgrnd.childNodes.length;++i)
-		{
-			if(bckgrnd.childNodes[i].nodeName=="DIV")
-			{
-				bar =bckgrnd.childNodes[i];
-			}
-		}
+		var bckgrnd=document.getElementsByTagName('header')[0];
+		var bar=document.getElementsByTagName('nav')[0];
 		var i=1;
 		var innerinterval;
 
@@ -59,56 +73,47 @@ function showPage()
 
 		var interval = setInterval(function() 
 		{
-			var height= 95-i;
-			var heightstring= height+"vw";
-			var margn=23-(i-50)*(22/40);
-			var margnstring=margn+"vw";
+			heightstring= (95-i)+"vw";
+			margnstring=(23-(i-63)*(22/27))+"vw";
 
 			bckgrnd.style.height = heightstring;
-			if(i>50)
+			if(i>63)
 			{
 				bar.style.marginTop =margnstring;
 			}
-
-			if(i==15)
+			if(i==63)
 			{
 				innerinterval = setInterval(function()
 				{
-					height= 95-i;
-					heightstring= height+"vw";
-					margn=23-(i-50)*(22/40);
-					margnstring=margn+"vw";
+					heightstring= (95-i)+"vw";
+					margnstring=(23-(i-63)*(22/27))+"vw";
 
 					bckgrnd.style.height = heightstring;
-					if(i>50)
-					{
-						bar.style.marginTop =margnstring;
-					}
+					bar.style.marginTop =margnstring;
 					if(i==90)
 					{
 						extendend=true;
-						showMain(document.getElementById("main"));
+						showMain(document.getElementsByTagName('main')[0]);
+
+						$("main").load(adresses[Number(window.location.hash[1])-1]);
 						
 						clearInterval(interval);
 						clearInterval(innerinterval);
 					}
-
-					i++;
-				} , 10);
+					++i;
+				} , 15);
 			}
-			
 			if(i==90)
 			{
 				extendend=true;
-				showMain(document.getElementById("main"));
+				showMain(document.getElementsByTagName('main')[0]);
 				
 				clearInterval(innerinterval);
 				clearInterval(interval);
 			}
 
-			i=i+1;
-
-		} ,20);
+			++i;
+		} ,10);
 	}
 }
 
@@ -129,7 +134,7 @@ function showPage()
 				clearInterval(interval);
 			}
 			++i;
-	} , 20);	
+		} , 20);	
 	}
 
 	function showMain(obj)
@@ -143,6 +148,6 @@ function showPage()
 			{
 				clearInterval(interval);
 			}
-			i++;
+			++i;
 		}, 10);
 	}

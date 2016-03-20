@@ -14,25 +14,54 @@
 	src: url(Roboto-Medium.ttf);
 }
 
+#imageplacer
+{
+	height: 12vw;
+	width: 56vw;
+	padding-top: 1vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-bottom: 1vw;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 0;
+	background-color: white;
+		
+}
+
 #profilepic
 {
 	height: 11.89437vw;
 	width: 10vw;
 	position: absolute;
-
+	margin-left: 0;
+	margin-top: 0;
 }
 
-#imageplacer
+h1
 {
-	height: 12vw;
-	padding-top: 1vw;
-	padding-left: 2vw;
-	padding-right: 2vw;
-	padding-bottom: 1vw;
-	width: 56vw;
-	background-color: white;
 	position: absolute;
-		
+	margin-left: 12.5vw;
+	margin-top: 0.5vw;
+	font-family: "Roboto Light";
+	font-size: 2.5vw;
+}
+
+#SMButtons
+{
+	padding: 1vw;
+	position: absolute;
+	margin-left: 11vw;
+	margin-top: 9vw;
+}
+
+.smButton
+{
+	height: 2vw;
+	width: 8vw;
+	float: left;
+	margin-right: 0.5vw;
+	background-color: #3b5998;
 }
 
 #textbody
@@ -57,35 +86,9 @@
 	position: absolute;
 	margin-left: 20vw;
 	margin-top: 15vw;
-	background-color: white;
-	
-	
 	font-family: "Roboto Light";
 	font-size: 1vw;
-}
-
-#SMButtons
-{
-	float: right;
-	width: 26vw;
-	height: 2vw;
-	position: absolute;
-	margin-left: 11vw;
-	margin-top: 9vw;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
-	padding-left: 1vw;
-	padding-right: 1vw;
-	
-}
-
-.smButton
-{
-	float: left;
-	height: 2vw;
-	width: 8vw;
-	margin-right: 0.5vw;
-	background-color: #3b5998;
+	background-color: white;
 }
 
 #FBButton
@@ -101,14 +104,4 @@
 #LiButton
 {
 	background-color: #0077b5;
-}
-
-h1
-{
-	position: absolute;
-	margin-left: 11.5vw;
-	margin-top: 0.5vw;
-	padding-left: 1vw;
-	font-family: "Roboto Light";
-	font-size: 2.5vw;
 }
