@@ -73,22 +73,22 @@ function showPage()
 		var interval = setInterval(function() 
 		{
 			heightstring= (95-i)+"vw";
-			margnstring=(23-(i-63)*(22/27))+"vw";
+			navString=(23-(i-63)*(22/27))+"vw";
 
 			bckgrnd.style.height = heightstring;
 			if(i>63)
 			{
-				bar.style.marginTop =margnstring;
+				bar.style.top =navString;
 			}
 			if(i==63)
 			{
 				innerinterval = setInterval(function()
 				{
 					heightstring= (95-i)+"vw";
-					margnstring=(23-(i-63)*(22/27))+"vw";
+					navString=(23-(i-63)*(22/27))+"vw";
 
 					bckgrnd.style.height = heightstring;
-					bar.style.marginTop =margnstring;
+					bar.style.top =navString;
 					if(i==90)
 					{
 						showMain(document.getElementsByTagName('main')[0]);
@@ -124,7 +124,7 @@ function moveBar(bar)
 	var i=0;
 	interval = setInterval(function() 
 	{
-		bar.style.marginLeft= 14+i+"vw";
+		bar.style.left= 14+i+"vw";
 		if(i==14)
 		{
 			clearInterval(interval);

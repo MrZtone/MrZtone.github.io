@@ -1,0 +1,30 @@
+#CVHeader
+{
+	height: 3.5vw;
+	line-height: 3.5vw;
+}
+
+#CVHeader h1
+{
+	position: absolute;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+#textbody aside
+{
+	font-family: "Roboto Light";
+	font-size: 1vw;
+	line-height: 1.5vw;
+}
+
+#textplacer table
+{
+	width: 36vw;
+}
+
+#textplacer table tr td
+{
+width: 12vw;	
+}
