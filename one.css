@@ -19,12 +19,65 @@
 	line-height: 1.5vw;
 }
 
-#textplacer table
+#textbody table
 {
-	width: 36vw;
+	font-family: "Roboto Light";
+	font-size: 1vw;
 }
 
-#textplacer table tr td
+#textbody table tr td
 {
-width: 12vw;	
+	padding-right: 1vw;
+	height: 2.5vw;
+}
+
+.languageSkill
+{
+	position: relative;
+	margin-left: 5vw;
+}
+.ductTapeTable
+{
+	float: left;
+}
+
+.col1
+{
+	margin-left: 3vw;
+	margin-bottom: 1vw;
+	float: left;
+	width: 10.5vw;
+	font-family: "Roboto Medium";
+}
+
+.col2
+{
+	float: left;
+	margin-bottom: 1vw;
+	width: 13vw;
+	font-family: "Roboto Light";
+}
+
+.col3
+{
+	float: left;
+	margin-bottom: 1vw;
+	font-family: "Roboto Thin";
+	clear: right;
+}
+
+.furtherInfo
+{
+	margin-left: 3vw;
+	margin-bottom: 1vw;
+	float: left;
+	font-family: "Roboto Light";
+	clear: right;
+}
+
+.CVh2
+{
+	margin-left: 1vw;
+	float: left;
+	clear: right;
 }

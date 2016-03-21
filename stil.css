@@ -119,11 +119,9 @@ p
 
 #textplacer
 {
-	width: 36vw;
-	padding-left: 2vw;
-	padding-right: 2vw;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
+	width: 38vw;
+	padding: 1vw;
+	margin-bottom: 3vw;
 	float: left;
 	font-family: "Roboto Light";
 	font-size: 1vw;
