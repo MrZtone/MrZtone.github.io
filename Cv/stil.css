@@ -1,0 +1,129 @@
+@font-face {
+    font-family:Roboto Light;
+    src:url(Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: Roboto Thin;
+	src: url(Roboto-Thin.ttf);
+}
+
+@font-face {
+	font-family: Roboto Medium;
+	src: url(Roboto-Medium.ttf);
+}
+
+/* General */
+body
+{
+	margin: 0;
+	height: 100%;
+	background-color: #ecf0f1;
+}
+
+header
+{
+	width: 100%;
+	height: 95vw;
+	position: fixed;
+	z-index: 1;
+    background: url('oldtimey.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+nav
+{
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
+	position: absolute;
+	top: 23vw;
+	left: 15vw;
+}
+
+.butn
+{
+	width: 16vw;
+	height: 3vw;
+	line-height: 3vw;
+	margin-right: 2vw;
+	float: left;
+	text-align: center;
+	background-color: #ecf0f1;
+	font-family: "Roboto Light";
+	font-size: 2vw;
+	cursor: pointer;
+	text-decoration: none;
+	color: #2c3e50;
+}
+
+main
+{
+	position: absolute;
+	top: 6vw;
+	left: 20vw;
+}
+
+h1
+{
+	font-family: "Roboto Light";
+	font-size: 2.5vw;
+}
+
+h2
+{
+	font-family: "Roboto Medium";
+	font-size: 1.5vw;
+}
+
+p
+{
+	margin: 0;
+}
+
+/*******************************/
+
+/* Pages */
+
+.pageHeader
+{
+	width: 56vw;
+	padding-top: 1vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-bottom: 1vw;
+	margin-bottom: 1vw;
+	background-color: white;
+	clear: both;
+}
+
+#profilepic
+{
+	height: 11.89437vw;
+	width: 10vw;
+	position: absolute;
+}
+
+#textbody
+{
+	width: 17vw;
+	padding: 1vw;
+	margin-right: 1vw;
+	float: left;
+	background-color: white;
+}
+
+#textplacer
+{
+	width: 38vw;
+	padding: 1vw;
+	margin-bottom: 3vw;
+	float: left;
+	font-family: "Roboto Light";
+	font-size: 1vw;
+	background-color: white;
+}
+
+/*******************************/

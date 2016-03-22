@@ -1,0 +1,50 @@
+#profileHeader
+{
+	height: 12vw;
+}
+
+#profileHeader h1
+{
+	position: absolute;
+	left: 14.5vw;
+	top: 1.5vw;
+	margin-top: 0;
+}
+
+#SMButtons
+{
+	padding: 1vw;
+	position: absolute;
+	left: 13vw;
+	top: 10vw;
+}
+
+.smButton
+{
+	height: 2vw;
+	width: 8vw;
+	float: left;
+	margin-right: 0.5vw;
+	background-color: #3b5998;
+}
+
+#textbody p
+{
+	font-family: "Roboto Light";
+	font-size: 1vw;
+}
+
+#FBButton
+{
+	background-color: #3b5998;
+}
+
+#TButton
+{
+	background-color: #55acee;
+}
+
+#LiButton
+{
+	background-color: #0077b5;
+}

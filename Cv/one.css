@@ -1,0 +1,83 @@
+#CVHeader
+{
+	height: 3.5vw;
+	line-height: 3.5vw;
+}
+
+#CVHeader h1
+{
+	position: absolute;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+#textbody aside
+{
+	font-family: "Roboto Light";
+	font-size: 1vw;
+	line-height: 1.5vw;
+}
+
+#textbody table
+{
+	font-family: "Roboto Light";
+	font-size: 1vw;
+}
+
+#textbody table tr td
+{
+	padding-right: 1vw;
+	height: 2.5vw;
+}
+
+.languageSkill
+{
+	position: relative;
+	margin-left: 5vw;
+}
+.ductTapeTable
+{
+	float: left;
+}
+
+.col1
+{
+	margin-left: 3vw;
+	margin-bottom: 1vw;
+	float: left;
+	width: 10.5vw;
+	font-family: "Roboto Medium";
+}
+
+.col2
+{
+	float: left;
+	margin-bottom: 1vw;
+	width: 13vw;
+	font-family: "Roboto Light";
+}
+
+.col3
+{
+	float: left;
+	margin-bottom: 1vw;
+	font-family: "Roboto Thin";
+	clear: right;
+}
+
+.furtherInfo
+{
+	margin-left: 3vw;
+	margin-bottom: 1vw;
+	float: left;
+	font-family: "Roboto Light";
+	clear: right;
+}
+
+.CVh2
+{
+	margin-left: 1vw;
+	float: left;
+	clear: right;
+}
