@@ -27,7 +27,7 @@ header
 	height: 95vw;
 	position: fixed;
 	z-index: 1;
-    background: url('oldtimey.jpg') no-repeat center center fixed;
+    background: url('../bilder/oldtimey.jpg') no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -40,7 +40,7 @@ nav
 	margin-bottom: 0.5vw;
 	position: absolute;
 	top: 23vw;
-	left: 15vw;
+	left: 23vw;
 }
 
 .butn
@@ -103,9 +103,10 @@ p
 
 #profilepic
 {
-	height: 11.89437vw;
+	
+	height: 14.80556vw;
 	width: 10vw;
-	position: absolute;
+	
 }
 
 #textbody

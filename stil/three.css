@@ -1,0 +1,16 @@
+.aProject
+{
+	height: 2vw;
+	width: 100%;
+	line-height: 2vw;
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
+	margin-left: 1vw;
+	font-family: "Roboto Light";
+	font-size: 1.5vw;
+	text-align: center;
+	background-color: white;
+	text-decoration: none;
+	color: #2c3e50;
+	float: left;
+}

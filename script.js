@@ -1,6 +1,6 @@
 var extendend =false;
-var adresses = ["http://mrztone.github.io/one.html", "http://mrztone.github.io/two.html", "http://mrztone.github.io/three.html", "http://mrztone.github.io/four.html"];
-//var adresses = ["one.html", "two.html", "three.html","four.html"];
+//var adresses = ["http://mrztone.github.io/one.html", "http://mrztone.github.io/two.html", "http://mrztone.github.io/three.html", "http://mrztone.github.io/four.html"];
+var adresses = ["one.html", "two.html", "three.html","four.html"];
 
 // ***************BUTTONS******************
 /*
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 
 //*****************************************
-
+/*
 function changeHistory()
 {
 	var index = Number(window.location.hash[1]);
@@ -51,6 +51,33 @@ function changeHistory()
 	else
 	{
 		if(index)
+		{
+			showPage();
+		}
+	}
+}
+*/
+
+function changeHistory()
+{
+	var adress = window.location.hash;
+	adress = adress.replace('#', '') + ".html";
+	adress = "http://mrztone.github.io/" + adress;
+
+	if(extendend)
+	{
+		if(adress!=".html")
+		{
+			$("main").load(adress)
+		}
+		else
+		{
+			location.reload();
+		}
+	}
+	else
+	{
+		if(adress!=".html")
 		{
 			showPage();
 		}
@@ -92,8 +119,11 @@ function showPage()
 					if(i==90)
 					{
 						showMain(document.getElementsByTagName('main')[0]);
+						var adress = window.location.hash;
+						adress = adress.replace('#', '') + ".html";
+						adress = "http://mrztone.github.io/" + adress;
 
-						$("main").load(adresses[Number(window.location.hash[1])-1]);
+						$("main").load(adress);
 						
 						clearInterval(interval);
 						clearInterval(innerinterval);
@@ -124,8 +154,8 @@ function moveBar(bar)
 	var i=0;
 	interval = setInterval(function() 
 	{
-		bar.style.left= 14+i+"vw";
-		if(i==14)
+		bar.style.left= 23+i+"vw";
+		if(i==23)
 		{
 			clearInterval(interval);
 		}
