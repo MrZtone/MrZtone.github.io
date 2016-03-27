@@ -23,7 +23,7 @@ function changeHistory()
 	}
 	else
 	{
-		if(adress!=".html")
+		if(adress!="http://mrztone.github.io/.html")
 		{
 			hideTitle
 			showPage(adress);
