@@ -1,74 +1,20 @@
 var extendend =false;
-//var adresses = ["http://mrztone.github.io/one.html", "http://mrztone.github.io/two.html", "http://mrztone.github.io/three.html", "http://mrztone.github.io/four.html"];
-var adresses = ["one.html", "two.html", "three.html","four.html"];
-
-// ***************BUTTONS******************
-/*
-$(document).ready(function(){
-document.getElementById("ONE").addEventListener('click', function(e){
-	$("main").load(adresses[0]);
-},false);
-});
-
-$(document).ready(function(){
-    $("#TWO").click(function(){
-        $("main").load(adresses[1]);
-    });
-});
-
-$(document).ready(function(){
-    $("#THREE").click(function(){
-     	$("main").load(adresses[2]);
-    });
-});
-
-$(document).ready(function(){
-    $("#FOUR").click(function(){
-     	$("main").load(adresses[3]);
-    });
-});
-*/
-
-
-//*****************************************
-/*
-function changeHistory()
-{
-	var index = Number(window.location.hash[1]);
-	console.log(index);
-
-	if(extendend)
-	{
-		if(index)
-		{
-			$("main").load(adresses[index-1]);
-		}
-		else
-		{
-			location.reload();
-		}
-	}
-	else
-	{
-		if(index)
-		{
-			showPage();
-		}
-	}
-}
-*/
 
 function changeHistory()
 {
 	var adress = window.location.hash;
 	adress = adress.replace('#', '') + ".html";
+	if(adress[0]=="P")
+	{
+		adress = "projects.html";
+	}
 	adress = "http://mrztone.github.io/" + adress;
 
 	if(extendend)
 	{
 		if(adress!=".html")
 		{
-			$("main").load(adress)
+			$("main").load(adress);
 		}
 		else
 		{
@@ -77,15 +23,16 @@ function changeHistory()
 	}
 	else
 	{
-		if(adress!="http://mrztone.github.io/.html")
+		if(adress!=".html")
 		{
-			showPage();
+			hideTitle
+			showPage(adress);
 		}
 	}
 }
 
 
-function showPage()
+function showPage(adress)
 {
 	if (!extendend)
 	{
@@ -93,9 +40,8 @@ function showPage()
 		var bckgrnd=document.getElementsByTagName('header')[0];
 		var bar=document.getElementsByTagName('nav')[0];
 		var i=1;
-		var innerinterval;
 
-		moveBar(bar);
+		hideTitle();
 
 		var interval = setInterval(function() 
 		{
@@ -109,33 +55,25 @@ function showPage()
 			}
 			if(i==63)
 			{
-				innerinterval = setInterval(function()
+				var innerinterval = setInterval(function()
 				{
 					heightstring= (95-i)+"vw";
 					navString=(23-(i-63)*(22/27))+"vw";
 
 					bckgrnd.style.height = heightstring;
 					bar.style.top =navString;
-					if(i==90)
+					if(i>=90)
 					{
-						showMain(document.getElementsByTagName('main')[0]);
-						var adress = window.location.hash;
-						adress = adress.replace('#', '') + ".html";
-						adress = "http://mrztone.github.io/" + adress;
-
 						$("main").load(adress);
-						
-						clearInterval(interval);
 						clearInterval(innerinterval);
 					}
 					++i;
 				} , 15);
 			}
-			if(i==90)
+			if(i>=90)
 			{
-				showMain(document.getElementsByTagName('main')[0]);
-				
-				clearInterval(innerinterval);
+				moveBar(bar);
+				show(document.getElementsByTagName('main')[0]);
 				clearInterval(interval);
 			}
 			++i;
@@ -160,10 +98,10 @@ function moveBar(bar)
 			clearInterval(interval);
 		}
 		++i;
-	} , 20);	
+	} , 22);	
 }
 
-function showMain(obj)
+function show(obj)
 {
 	var i=1;
 	obj.style.visibility="visible";
@@ -176,4 +114,21 @@ function showMain(obj)
 		}
 		++i;
 	}, 10);
+}
+
+function hideTitle()
+{
+	var obj = document.getElementById("Title");
+	var i=1;
+	var interval= setInterval(function()
+	{
+		obj.style.opacity= (1.0 -0.01*i)+"";
+		if(i==100)
+		{
+			obj.style.visibility="hidden";
+			show(document.getElementById("reset"));
+			clearInterval(interval);
+		}
+		++i;
+	}, 10);	
 }

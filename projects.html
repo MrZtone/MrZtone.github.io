@@ -7,5 +7,22 @@
 </div>
 
 <script type="text/javascript">
-$("#textbody").load("projectlist.html");
+	$("#textbody").load("projectlist.html");
+	var headline="";
+	var adress = window.location.hash;
+	adress = adress.replace('#', '');
+	if(adress[0]=="P")
+	{
+		adress = adress.replace('P', '');
+		headline=adress;
+		adress = "projects/" + adress + ".html";
+		$("#textplacer").load(adress);
+		document.getElementsByTagName('h1')[0].innerHTML=headline;
+	}
+	else
+	{
+		adress = "projects/FrontPage.html";
+	}
+	adress = "http://mrztone.github.io/" + adress;
+	$("#textplacer").load(adress);
 </script>
