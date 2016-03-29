@@ -12,7 +12,7 @@ function changeHistory()
 
 	if(extendend)
 	{
-		if(adress!=".html")
+		if(adress!="http://mrztone.github.io/.html")
 		{
 			$("main").load(adress);
 		}
