@@ -1,4 +1,6 @@
 var extendend =false;
+var ProImg= new Image();
+ProImg.src="http://mrztone.github.io/bilder/me2.jpg";
 
 function changeHistory()
 {
