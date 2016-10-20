@@ -45,7 +45,7 @@ function showPage(adress)
 
 		hideTitle();
 
-		var interval = setInterval(function() 
+		var interval = setInterval(function()
 		{
 			heightstring= (95-i)+"vw";
 			navString=(23-(i-63)*(22/27))+"vw";
@@ -83,7 +83,7 @@ function showPage(adress)
 	}
 }
 
-function change(obj,col1, col2) 
+function change(obj,col1, col2)
 {
 	obj.style.background=col1;
 	obj.style.color=col2;
@@ -92,7 +92,7 @@ function change(obj,col1, col2)
 function moveBar(bar)
 {
 	var i=0;
-	interval = setInterval(function() 
+	interval = setInterval(function()
 	{
 		bar.style.left= 23+i+"vw";
 		if(i==23)
@@ -100,7 +100,7 @@ function moveBar(bar)
 			clearInterval(interval);
 		}
 		++i;
-	} , 22);	
+	} , 22);
 }
 
 function show(obj)
@@ -132,5 +132,5 @@ function hideTitle()
 			clearInterval(interval);
 		}
 		++i;
-	}, 10);	
+	}, 10);
 }

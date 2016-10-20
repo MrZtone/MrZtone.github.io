@@ -17,6 +17,11 @@
 	height: 2.5vw;
 }
 
+body
+{
+	overflow-y: scroll;;
+}
+
 .languageSkill
 {
 	position: relative;
